@@ -16,7 +16,6 @@ For this tutorial, we will be breaking down a regex used to match a hex value. A
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 
 
