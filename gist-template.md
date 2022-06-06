@@ -16,7 +16,6 @@ For this tutorial, we will be breaking down a regex used to match a hex value. A
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
@@ -47,20 +46,17 @@ Quantifiers are used to define the number of times a character, pattern or group
 The Or operator is used to tell the code that either code on each side of the vertical bar <kbd>|</kbd> can be used for a match. In the code above we see that a match can be made with <kbd>a-f0-9]{6}</kbd> or <kbd>a-f0-9]{3}</kbd>.
 
 ### **Character Classes**
+/^#?(<kbd>[a-f0-9]</kbd>{6}|<kbd>[a-f0-9]</kbd>{3})$/
 
-### **Flags**
-
-### **Grouping and Capturing**
+A character class is used to match any symbol from a certain character set. The character classes above are defined by <kbd>a-f</kbd> as well as <kbd>0-9</kbd> (range expressions), seen on both sides of the or operator. Contained within square brackets <kbd>[]</kbd>, the expression will be searched for values that match a-f (a, b, c, d, e, f) and 0-9 (0, 1 , 2, 3, 4, 5, 6, 7, 8, 9).
 
 ### **Bracket Expressions**
 
-### **Greedy and Lazy Match**
+/^#?<kbd>([a-f0-9]{6}|[a-f0-9]{3})</kbd>$/
 
-### **Boundaries**
+Bracket expressions is a list of characters enclosed by brackets <kbd>[]</kbd>. These can be used to match single characters in a list or a range of characters (like our example). If the first character in the list is a caret <kbd>^</kbd>, then it matches characters that are not in the list. 
 
-### **Back-references**
 
-### **Look-ahead and Look-behind**
 
 ## Author
 
